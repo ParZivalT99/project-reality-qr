@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AR.js sin marcadores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Importa las bibliotecas necesarias -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/3.5.5/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body>
+    <!-- Muestra la cámara del dispositivo móvil -->
+    <a-scene embedded arjs>
+      <a-entity camera></a-entity>
+      
+      <!-- Carga el modelo GLB -->
+      <a-entity gltf-model="url(DibesferGardenHouse.glb)" scale="0.01 0.01 0.01"></a-entity>
+    </a-scene>
+  </body>
+</html>
