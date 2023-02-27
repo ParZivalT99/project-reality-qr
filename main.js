@@ -18,7 +18,7 @@ var arToolkitSource = new THREEx.ArToolkitSource({
   
   var arToolkitContext = new THREEx.ArToolkitContext({
     cameraParametersUrl:
-      "https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/assets/arjs/camera_para.dat",
+      "data/camera_para.dat",
     detectionMode: "mono",
     maxDetectionRate: 30,
     canvasWidth: arToolkitSource.parameters.sourceWidth,
