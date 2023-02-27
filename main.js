@@ -57,7 +57,7 @@ var arToolkitSource = new THREEx.ArToolkitSource({
   // Carga el modelo 3D en formato glTF
   var loader = new THREE.GLTFLoader();
   loader.load(
-    "https://threejs.org/examples/models/gltf/RobotExpressive/RobotExpressive.glb",
+    "DibesferGardenHouse.glb",
     function(gltf) {
       modelObject = gltf.scene;
       modelObject.visible = false;
