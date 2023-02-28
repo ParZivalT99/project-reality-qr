@@ -9,9 +9,17 @@
 <script type='text/javascript' src='basic.js'></script>
 </head>
 <body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true' gesture-detector>
+<a-scene vr-mode-ui='enabled: false' arjs='trackingMethod: best; sourceType: webcam; videoTexture: true; debugUIEnabled: false'   
+embedded
+renderer="logarithmicDepthBuffer: true;"
+vr-mode-ui="enabled: false"
+gesture-detector
+id="scene"
+>
     <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-entity gltf-model="#modelo" scale="0.5 0.5 0.5" gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" rotation="-90 0 0" gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
+    <a-entity gltf-model="#modelo" scale="5 5 5"
+    position="50 150 0"
+    class="clickable" gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" gesture-handler="minScale: 0.25; maxScale: 10"></a-entity>
 </a-scene>
 </body>
 </html>
