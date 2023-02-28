@@ -13,7 +13,7 @@
 <body>
 <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
     <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-entity gltf-model="#modelo" scale="0.5 0.5 0.5" gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" rotation="-90 0 0"></a-entity>
+    <a-entity gltf-model="#modelo" scale="0.5 0.5 0.5" gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" rotation="-90 0 0" pinch-rotate pinch-scale click></a-entity>
 </a-scene>
 </body>
 </html>
