@@ -18,6 +18,7 @@ window.onload = () => {
                 latitude: e.detail.position.latitude + 0.001,
                 longitude: e.detail.position.longitude
             });
+            entity.setAttribute("pinch-to-scale", "");
             document.querySelector("a-scene").appendChild(entity);
         }
         testEntityAdded = true;
