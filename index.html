@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AR.js A-Frame Location-based</title>
-<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
-<script type='text/javascript' src='basic.js'></script>
+  <title>AR.js A-Frame Location-based</title>
+  <!-- A-Frame y A-Frame Extras -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+  <!-- AR.js -->
+  <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js'></script>
+  <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+  <!-- Nuestro código JavaScript -->
+  <script type='text/javascript' src='basic.js'></script>
 </head>
 <body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+  <!-- A-Frame Scene y sus elementos -->
+  <a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
+    <!-- Cámara de A-Frame -->
     <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+    <!-- Entidad de A-Frame que representa el objeto de realidad aumentada -->
     <a-entity scale="0.5 0.5 0.5" gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>" rotation="0 180 0" pinch-to-scale swipe-to-rotate></a-entity>
-</a-scene>
+  </a-scene>
 </body>
 </html>
